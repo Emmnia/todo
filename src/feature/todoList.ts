@@ -39,7 +39,7 @@ export const todoSlice = createSlice({
             state.todos = newTodos
             toast(`Задача '${action.payload.text}' удалена`)
         },
-    },
+    }
 })
 
 export const { createAction, updateAction, deleteAction } = todoSlice.actions
