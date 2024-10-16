@@ -9,8 +9,9 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-color: #edf0f1;
         padding: 50px 0 0 0;
+        background-color: ${(props) => props.theme.colors.backgroundSecondary};
+        transition: background-color .2s;
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
         line-height: 1.429;

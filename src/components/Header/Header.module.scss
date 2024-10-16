@@ -10,6 +10,7 @@
 }
 
 .container {
+    position: relative;
     max-width: 97%;
     width: 100%;
     margin: 0 auto;
@@ -26,4 +27,11 @@
 
 .active {
     color: #ffffff33;
+}
+
+.toggle {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }

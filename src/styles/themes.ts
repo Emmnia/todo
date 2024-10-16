@@ -17,7 +17,4 @@ const dark: Theme = {
     }
 }
 
-export const themes = {
-    light: light,
-    dark: dark
-}
+export const themes = { light, dark }
