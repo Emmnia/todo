@@ -1,7 +1,8 @@
-import './Form.scss'
 import { useDispatch, useSelector } from 'react-redux'
 import { updateText, resetText } from '../../feature/form'
 import { RootState } from '../../store'
+import { FormBlock, FormWrapper, FormLabel, FormField, FormControl } from './Form.styled'
+import plusIcon from '../../assets/images/plus.png'
 
 export const Form = (props: { createNewToDo: Function }) => {
 
@@ -17,13 +18,13 @@ export const Form = (props: { createNewToDo: Function }) => {
     }
 
     return (
-        <div className="form-wrapper">
-            <form action="#" onSubmit={formSubmit}>
-                <label>
-                    <input value={text} type="text" onChange={(e) => dispatch(updateText(e.target.value))} />
-                    <button></button>
-                </label>
-            </form>
-        </div>
+        <FormWrapper>
+            <FormBlock action="#" onSubmit={formSubmit}>
+                <FormLabel>
+                    <FormField value={text} type="text" onChange={(e) => dispatch(updateText(e.target.value))} />
+                    <FormControl icon={plusIcon} />
+                </FormLabel>
+            </FormBlock>
+        </FormWrapper>
     )
 }
