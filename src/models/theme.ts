@@ -5,3 +5,7 @@ export interface Theme {
         backgroundSecondary: string
     }
 }
+
+export interface Themes {
+    [key: string]: Theme
+}

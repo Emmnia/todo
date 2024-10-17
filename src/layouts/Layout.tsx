@@ -3,7 +3,6 @@ import { Header } from "../components/Header/Header"
 import { Helmet, HelmetProvider } from "react-helmet-async"
 import { GlobalStyle } from "../styles/GlobalStyle"
 import { ThemeProvider } from "styled-components"
-import { themes } from '../styles/themes'
 import { useSelector } from "react-redux"
 import { RootState } from "../store"
 

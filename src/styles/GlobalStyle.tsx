@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         padding: 50px 0 0 0;
-        background-color: ${(props) => props.theme.colors.backgroundSecondary};
+        background-color: ${({ theme }) => theme.colors.backgroundSecondary};
         transition: background-color .2s;
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
